@@ -10,7 +10,13 @@ ostream & Table::Print(ostream &os) const
 #endif
 
 #if defined(LINKSTATE)
+void Table::updateTopo(unsigned path, map<unsigned, Cost> topoFromPath)
 
+void Table::updatCost(unsigned path, double cost);
+
+void Table::LinkStateAlg(){
+  
+void Table::showTable();
 #endif
 
 #if defined(DISTANCEVECTOR)
